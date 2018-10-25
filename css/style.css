@@ -45,8 +45,7 @@ header #branding {
   float: left;
 }
 
-header #branding h1 {
-}
+header #branding h1 {}
 
 header nav {
   float: right;
