@@ -1,4 +1,9 @@
-h1{
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
   text-align: center;
 }
 
@@ -13,17 +18,14 @@ ul {
   padding: 0;
 }
 
-
-
-
-
-
 header {
-  background: #35424a;
+  background: red;
+  background-image: linear-gradient(-45deg,
+    #2906ac,
+    #0ec19c);
   color: #ffffff;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #e8491d 3px solid;
 }
 
 header a {
@@ -36,7 +38,7 @@ header a {
 header li {
   float: left;
   display: inline;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
 }
 
 header #branding {
@@ -59,17 +61,19 @@ header .highlight, header .current a {
 
 header a:hover {
   color: #cccccc;
-  font-weight: bold;
 }
 
+@media(max-width: 650px) {
 
-
-  @media(max-width: 768px){
   header #branding,
   header nav,
-  header nav li,{
+  header nav li, {
     float: none;
     text-align: center;
+    margin: 0 auto;
     width: 100%;
+  }
 
+  header {
+    padding-bottom: 15px;
   }
