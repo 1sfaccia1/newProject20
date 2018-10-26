@@ -39,7 +39,7 @@ header #branding {
 
 header nav {
   float: right;
-  padding: 25px 0;
+  padding: 27px 0;
 
 }
 
@@ -71,6 +71,8 @@ section h1 {
   text-shadow: 1px 1px 2px black, 0 0 75px blue, 0 0 25px darkblue;
   text-transform: uppercase;
   position: relative;
+display: flex;
+
 }
 
 section#about {
@@ -165,7 +167,7 @@ section#about {
 section#contact {
   background-image: linear-gradient(#1f1738, #000);
   height: 100%;
-  padding: 50px 0 50px 0;
+  padding: 25px 0;
 }
 
 section h2 {
@@ -181,8 +183,7 @@ section h2 {
 form {
   color: white;
   text-shadow: 2px 2px 5px #980000;
-
-
+ margin-top: 25px;
 }
 
 input[type=text], select, textarea {
@@ -217,7 +218,7 @@ input[type=submit]:hover {
   background-image: linear-gradient(#000, #553da0);
   padding: 10px;
   max-width: 600px;
-  margin: 25px auto;
+  margin: 10px auto;
   border: ridge 0.4em #230ca0;
   box-shadow: 0px 5px 30px rgba(255, 0, 0, 0.87);
 }
@@ -232,7 +233,6 @@ footer {
   text-align: center;
   height: 60px;
   background-image: linear-gradient(-45deg, #0ec19c, #2906ac);
-  box-sizing: border-box;
 }
 
 footer p {
