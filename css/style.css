@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 .container {
   width: 80%;
   margin: auto;
@@ -16,8 +15,7 @@ header {
     #2906ac,
     #0ec19c);
   color: #ffffff;
-  padding-top: 30px;
-  max-height: 70px;
+  height: 70px;
 }
 
 header a {
@@ -35,17 +33,18 @@ header li {
 
 header #branding {
   float: left;
+  padding: 20px 0;
 }
 
-header #branding h1 {}
 
 header nav {
   float: right;
-  margin-top: 10px;
+  padding: 25px 0;
+
 }
 
 header .highlight, header .current a {
-  color: #e8491d;
+  color: white;
   font-weight: bold;
 }
 
@@ -53,7 +52,7 @@ header a:hover {
   color: #cccccc;
 }
 
-section#home{
+section#home {
   background-image: url('../img/my_pic.JPG');
   height: 100vh;
   background-attachment: fixed;
@@ -74,38 +73,35 @@ section h1 {
   position: relative;
 }
 
-section#about{
-    background-image: linear-gradient(#000,#1f1738);
+section#about {
+  background-image: linear-gradient(#000, #1f1738);
   height: 60vh;
-
 }
-
 
 .column {
-    float: left;
-    width: 33.33%;
-    height: 100%;
+  float: left;
+  width: 33.33%;
+  height: 100%;
 }
+
 .row {
   height: 100%;
   padding-top: 25px;
 }
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
 .flip-card {
   background-color: transparent;
   width: 100%;
   height: 100%;
-
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -115,24 +111,24 @@ section#about{
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.card1{
+.card1 {
   background-image: url('../img/harreatBandStand.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.card2{
+
+.card2 {
   background-image: url('../img/wittman.webdesigns.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-/* Position the front and back side */
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -140,27 +136,39 @@ background-position: center;
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
   color: black;
 }
 
-/* Style the back side */
 .flip-card-back {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
 }
 
-section#contact{
-background-image: linear-gradient(#1f1738, #000);
- height: 100%;
-  padding: 50px 0 50px 0;
+.flip-card-back h3{
+  padding: 20px 0;
+  text-shadow: 2px 2px 5px #980000;
+  font-size: 1.6em;
+
 
 }
 
-section h2{
+  .flip-card-back p{
+    padding: 13px;
+    text-shadow: 2px 2px 5px #980000;
+    font-size: 1em;
+  }
+
+
+section#contact {
+  background-image: linear-gradient(#1f1738, #000);
+  height: 100%;
+  padding: 50px 0 50px 0;
+}
+
+section h2 {
   font-size: 3em;
   color: rgb(250, 250, 250);
   text-shadow: 1px 1px 2px black, 0 0 75px blue, 0 0 25px darkblue;
@@ -168,65 +176,68 @@ section h2{
   position: relative;
   text-align: center;
   padding: 25px 0;
-
 }
-form{
+
+form {
   color: white;
+  text-shadow: 2px 2px 5px #980000;
+
+
 }
 
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical
+  width: 100%;
+  padding: 12px;
+  background-color: #151856;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
 }
-
 
 input[type=submit] {
   background-color: #151856;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-
 input[type=submit]:hover {
-    background-color: #ff0000;
-    border: 1px solid #000;
-    box-sizing: border-box;
+  background-color: #ff0000;
+  border: 1px solid #000;
+  box-sizing: border-box;
 }
 
 .container2 {
-    border-radius: 5px;
-        background-image: linear-gradient(#000,#553da0);
-    padding: 10px;
-    max-width: 600px;
-    margin: 25px auto;
-    border: ridge 0.4em #230ca0;
-      box-shadow: 0px 5px 30px rgba(255, 0, 0, 0.87);
+  border-radius: 5px;
+  background-image: linear-gradient(#000, #553da0);
+  padding: 10px;
+  max-width: 600px;
+  margin: 25px auto;
+  border: ridge 0.4em #230ca0;
+  box-shadow: 0px 5px 30px rgba(255, 0, 0, 0.87);
 }
 
 ::placeholder {
-  color: red;
+  color: #000;
   opacity: 1;
 }
 
-footer{
+footer {
   width: 100%;
   text-align: center;
   height: 60px;
-  background-image: linear-gradient(-45deg,#0ec19c,#2906ac);
+  background-image: linear-gradient(-45deg, #0ec19c, #2906ac);
   box-sizing: border-box;
 }
-footer p{
-padding: 20px 0;
-color: #fcfcfc;
+
+footer p {
+  padding: 20px 0;
+  color: #fcfcfc;
 }
 
 @media(max-width: 650px) {
@@ -243,7 +254,8 @@ color: #fcfcfc;
   header {
     padding-bottom: 15px;
   }
+
   .column {
-      width: 100%;
+    width: 100%;
   }
 }
