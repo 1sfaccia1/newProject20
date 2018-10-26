@@ -61,6 +61,16 @@ header a:hover {
   color: #cccccc;
 }
 
+section{
+  background-image: url('../img/my_pic.JPG');
+  height: 100vh;
+  background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
 @media(max-width: 650px) {
 
   header #branding,
