@@ -1,2 +1,1 @@
- console.log('You won
-     t make it bitch!');
+ console.log('You won\'t make it bitch!');
